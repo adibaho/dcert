@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ND Academy 2026 — Verified Cutoffs & Coaching</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+      --glass: rgba(255, 255, 255, 0.75);
+      --glass-border: rgba(255, 255, 255, 0.8);
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --primary: #4f46e5;
+      --primary-glow: rgba(79, 70, 229, 0.4);
+      --accent: #0ea5e9;
+      --accent2: #8b5cf6;
+      --card-bg: rgba(255, 255, 255, 0.6);
+      --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+      --input-bg: rgba(255, 255, 255, 0.8);
+      --input-border: #e2e8f0;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --wa: #25D366; --tg: #0088cc; --ig: #E1306C;
+      --fb: #1877F2; --yt: #FF0000; --ps: #00d3b6;
+      --kea-orange: #f97316;
+    }
+
+    [data-theme="dark"] {
+      --bg-gradient: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                      radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+                      radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+      --bg-color: #0f172a;
+      --glass: rgba(30, 41, 59, 0.7);
+      --glass-border: rgba(255, 255, 255, 0.1);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #818cf8;
+      --primary-glow: rgba(129, 140, 248, 0.2);
+      --accent: #38bdf8;
+      --accent2: #c084fc;
+      --card-bg: rgba(30, 41, 59, 0.4);
+      --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+      --input-bg: rgba(15, 23, 42, 0.6);
+      --input-border: #334155;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-color, #f0f2f5);
+      background-image: var(--bg-gradient);
+      background-attachment: fixed;
+      background-size: cover;
+      color: var(--text-main);
+      padding-bottom: 100px;
+      min-height: 100vh;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    h1, h2, h3, .brand { font-family: 'Outfit', sans-serif; }
+
+    .glass-panel {
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--shadow);
+      border-radius: 24px;
+    }
+
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 6px 5%;
+      background: rgba(30, 41, 59, 0.98);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+      border-radius: 0 0 20px 20px; border-top: none;
+      color: white; 
+    }
+
+    .brand {
+      display: flex; align-items: center; gap: 8px;
+      color: white; 
+    }
+
+    .brand-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid var(--primary);
+      box-shadow: 0 0 8px var(--primary-glow);
+    }
+
+    .brand-text-col {
+      display: flex; flex-direction: column; justify-content: center;
+    }
+
+    .brand-title {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 900;
+        font-size: 1.15rem;
+        letter-spacing: -0.5px;
+        line-height: 1;
+        background: linear-gradient(90deg, #818cf8, #c084fc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .brand-taglines {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.55rem;
+        font-weight: 700;
+        color: #cbd5e1;
+        text-transform: uppercase;
+        line-height: 1.1;
+        margin-top: 2px;
+    }
+    .brand-taglines span {
+        display: block;
+        color: #38bdf8;
+    }
+
+    .nav-actions { display: flex; gap: 8px; align-items: center; }
+
+    .header-phone {
+        color: white;
+        text-decoration: none;
+        font-weight: 800;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+        padding: 4px 10px;
+        border-radius: 99px;
+        font-size: 0.75rem;
+        box-shadow: 0 4px 10px var(--primary-glow);
+        white-space: nowrap;
+        transition: all 0.3s ease;
+    }
+    .header-phone:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px var(--primary-glow);
+    }
+
+    .icon-btn {
+      appearance: none;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      border-radius: 8px;
+      padding: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px;
+      font-size: 1rem;
+    }
+    .icon-btn:hover {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .tabs-container {
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 2px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .tabs-container::-webkit-scrollbar { display: none; }
+
+    .tabs {
+      display: flex; gap: 4px;
+      padding: 3px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 99px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      white-space: nowrap;
+    }
+
+    .tab {
+      border: none;
+      background: transparent;
+      color: #94a3b8;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 5px 14px;
+      border-radius: 99px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .tab[aria-selected="true"] {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white; 
+      box-shadow: 0 4px 10px var(--primary-glow);
+      transform: scale(1.05);
+    }
+
+    .menu-btn { display: none; }
+    @media (max-width: 1100px) {
+      .tabs-container { display: none; } 
+      .menu-btn { display: flex; }
+      
+      .tabs-container[data-open="true"] {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        right: 5%; left: 5%;
+        background: rgba(30, 41, 59, 0.98);
+        backdrop-filter: blur(20px);
+        padding: 12px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: var(--shadow);
+        overflow: visible;
+        z-index: 1500;
+      }
+      .tabs { 
+          flex-direction: column; 
+          background: transparent; 
+          border: none; 
+          padding: 0;
+      }
+      .tab { width: 100%; text-align: center; padding: 10px; font-size: 0.95rem; }
+    }
+
+    main { max-width: 1000px; margin: 80px auto 40px; padding: 0 20px; } 
+
+    .panel {
+      padding: 3rem;
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    @media (max-width: 600px) {
+        .panel { padding: 1.2rem; }
+        main { padding: 0 10px; margin-top: 70px; }
+        .page-title { font-size: 2rem; }
+        .header-phone { font-size: 0.75rem; padding: 5px 10px; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-title {
+      text-align: center;
+      font-weight: 900;
+      font-size: 2.5rem;
+      margin: 0 0 8px;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin: 0 0 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .full { grid-column: 1 / -1; }
+    @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+
+    label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      margin-left: 4px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 16px;
+      border-radius: 16px;
+      border: 2px solid var(--input-border);
+      background: var(--input-bg);
+      color: var(--text-main);
+      font-size: 1.1rem;
+      font-weight: 600;
+      font-family: 'Outfit', sans-serif;
+      transition: all 0.3s ease;
+      appearance: none;
+    }
+
+    select {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        background-size: 1em;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px var(--primary-glow);
+      background-color: var(--glass);
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 100%;
+      padding: 18px;
+      border: none;
+      border-radius: 16px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      color: white;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 100%);
+      box-shadow: 0 10px 25px -5px var(--primary-glow);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+    }
+    .btn.secondary {
+        background: var(--card-bg);
+        color: var(--text-main);
+        border: 2px solid var(--input-border);
+        box-shadow: none;
+    }
+    .btn.secondary:hover {
+        background: var(--input-bg);
+        border-color: var(--text-muted);
+        transform: translateY(-2px);
+    }
+
+    .btn::after {
+      content: '';
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.2), transparent);
+      opacity: 0; transition: opacity 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px -5px var(--primary-glow);
+    }
+    .btn:hover::after { opacity: 1; }
+    .btn:active { transform: scale(0.98); }
+
+    .rank-box, .result-overlay {
+      display: none;
+      margin-top: 32px;
+      padding: 32px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, var(--input-bg) 0%, var(--glass) 100%);
+      border: 2px solid var(--primary);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: popIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    @keyframes popIn {
+        0% { opacity: 0; transform: scale(0.8); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+
+    .rank-big, .big-score {
+      font-size: 4rem;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 10px 0;
+      line-height: 1;
+    }
+
+    .note {
+      margin-top: 24px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      background: var(--card-bg);
+      padding: 16px;
+      border-radius: 12px;
+      border-left: 4px solid var(--accent);
+    }
+    .note b { color: var(--text-main); }
+
+    .toppers-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    @media (max-width: 768px) {
+        .toppers-grid { grid-template-columns: 1fr; }
+    }
+    .topper-card {
+        background: var(--card-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: 16px;
+        padding: 16px;
+        text-align: center;
+        box-shadow: var(--shadow);
+        transition: transform 0.3s ease;
+    }
+    .topper-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--primary);
+    }
+    .topper-img-fixed {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        background: rgba(0,0,0,0.05);
+        border: 2px solid var(--glass-border);
+    }
+
+    .carousel-container {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        margin-bottom: 40px;
+        position: relative;
+        background: var(--card-bg);
+        border: 2px solid var(--glass-border);
+    }
+    .carousel-track {
+        display: flex;
+        transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .carousel-img {
+        flex: 0 0 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .carousel-img:hover { opacity: 0.9; }
+
+    .finder-bar {
+      background: var(--input-bg);
+      border: 1px solid var(--input-border);
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+    .finder-bar .row {
+      display: grid; grid-template-columns: 1fr 1fr auto; gap: 16px; align-items: end;
+    }
+    @media (max-width: 768px) { .finder-bar .row { grid-template-columns: 1fr; } }
+
+    #resultsArea { display: none; }
+
+    .cols {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .col {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      padding: 16px;
+    }
+
+    .col h3 {
+      margin: 0 0 16px;
+      font-size: 1.1rem;
+      display: flex; align-items: center; gap: 8px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .cards { display: flex; flex-direction: column; gap: 12px; }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 16px;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px) scale(1.01);
+      background: var(--input-bg);
+      border-color: var(--accent);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      z-index: 2;
+    }
+
+    .card .title {
+      font-weight: 700;
+      padding-right: 90px;
+      line-height: 1.3;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      display: flex; justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .badge {
+      position: absolute; top: 12px; right: 12px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+    .badge.ok { background: rgba(16, 185, 129, 0.15); color: var(--success); }
+    .badge.warn { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+    .badge.danger { background: rgba(239, 68, 68, 0.15); color: var(--danger); }
+    .badge.na { background: var(--input-border); color: var(--text-muted); }
+
+    .result-badge {
+        background: #48bb78;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .demo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    .demo-card {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: 16px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        color: var(--text-main);
+        display: flex; flex-direction: column;
+    }
+    .demo-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        border-color: var(--primary);
+    }
+    .demo-icon-area {
+        height: 120px;
+        background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(14, 165, 233, 0.1));
+        display: flex; align-items: center; justify-content: center;
+        font-size: 3rem;
+        overflow: hidden;
+    }
+    .demo-content { padding: 16px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .demo-title { font-weight: 700; margin-bottom: 8px; display: block; line-height: 1.4; }
+    .demo-desc { font-size: 0.85rem; color: var(--text-muted); }
+
+    .course-card {
+      display: block; text-decoration: none; color: var(--text-main);
+      background: var(--card-bg); border: 1px solid var(--glass-border);
+      border-radius: 24px; padding: 24px; position: relative;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      animation: fadeInUp 0.6s ease-out both; overflow: hidden;
+    }
+    .course-card:nth-child(1) { animation-delay: 0.1s; }
+    .course-card:nth-child(2) { animation-delay: 0.2s; }
+    .course-card:nth-child(3) { animation-delay: 0.3s; }
+    .course-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); border-color: var(--primary); background: var(--glass); }
+
+    .course-details { margin-top: 12px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; padding-left: 20px; }
+    .course-details li { margin-bottom: 4px; }
+
+    .gallery-img {
+        width: 100%; height: auto; border-radius: 16px;
+        border: 4px solid var(--glass-border);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease; cursor: pointer;
+    }
+    .gallery-img:hover { transform: scale(1.02); border-color: var(--accent); }
+
+    .image-modal {
+        display: none; position: fixed; z-index: 2000;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center; align-items: center;
+        opacity: 0; transition: opacity 0.3s ease;
+    }
+    .image-modal.show { display: flex; opacity: 1; }
+    .modal-content { max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 20px rgba(255,255,255,0.2); }
+    .modal-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; z-index: 2001; }
+
+    .highlight-box {
+        background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(14, 165, 233, 0.1) 100%);
+        border: 2px solid var(--primary); padding: 32px; border-radius: 24px;
+        text-align: center; margin-bottom: 40px; animation: fadeInUp 0.8s ease-out; position: relative;
+    }
+    .highlight-box::before {
+        content: "🔥 HOT"; position: absolute; top: -12px; right: 20px;
+        background: var(--danger); color: white; padding: 4px 12px; border-radius: 12px;
+        font-size: 0.8rem; font-weight: 800; transform: rotate(5deg);
+    }
+    .highlight-box h2 { margin: 0 0 8px; color: var(--primary); font-size: 1.8rem; }
+    .coach-label {
+        display: inline-block; background: var(--primary); color: white;
+        padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 700;
+        margin-bottom: 12px; text-transform: uppercase;
+    }
+    .app-link-text { color: var(--accent); font-weight: 700; font-size: 0.85rem; margin-top: 12px; display: block; text-transform: uppercase; letter-spacing: 0.5px; }
+    .section-head { display: flex; align-items: center; gap: 12px; margin: 40px 0 20px; font-size: 1.3rem; font-weight: 800; color: var(--text-main); }
+
+    .about-card { background: var(--input-bg); border-radius: 24px; padding: 32px; text-align: center; margin-bottom: 32px; border: 1px solid var(--glass-border); box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+    .social-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 20px; margin-top: 24px; }
+
+    .social-btn {
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        padding: 20px; border-radius: 20px; background: var(--glass); text-decoration: none;
+        color: var(--text-main); font-weight: 600; border: 1px solid var(--glass-border);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); text-align: center; gap: 10px;
+    }
+    .social-btn:hover { transform: translateY(-5px); background: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-color: currentColor; }
+    .social-icon { font-size: 2rem; margin-bottom: 4px; }
+    .quote-box { font-style: italic; font-size: 1.1rem; color: var(--primary); padding: 24px; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.5); border-radius: 0 16px 16px 0; margin: 24px auto; max-width: 600px; }
+
+    .sem-inputs-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .calc-input-group {
+        display: flex; align-items: center; justify-content: space-between;
+        background: var(--glass); padding: 16px; border-radius: 16px; border: 1px solid var(--glass-border);
+        transition: transform 0.2s;
+    }
+    .calc-input-group:focus-within { transform: scale(1.02); border-color: var(--primary); }
+    .calc-sem-name { font-weight: 700; color: var(--text-main); font-size: 1rem; }
+    .calc-actions { display: flex; gap: 12px; }
+    .details-row { display: flex; justify-content: center; gap: 20px; color: var(--text-muted); font-size: 0.9rem; margin-top: 8px; }
+
+    .sem-detailed {
+        grid-column: 1 / -1; 
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+    .sgpa-result-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .marks-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 8px;
+        padding-top: 16px;
+        border-top: 1px solid var(--glass-border);
+    }
+    .marks-grid label {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        font-weight: 700;
+        margin-bottom: 6px;
+        display: block;
+        text-transform: uppercase;
+    }
+    .marks-grid input {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    /* ===== KEA UPDATES STYLES ===== */
+    .kea-hero {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.12) 0%, rgba(234, 88, 12, 0.08) 100%);
+      border: 2px solid rgba(249, 115, 22, 0.4);
+      border-radius: 24px;
+      padding: 28px;
+      text-align: center;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .kea-hero::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(circle, rgba(249,115,22,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .kea-hero-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--kea-orange);
+      margin: 0 0 6px;
+    }
+    .kea-hero-sub {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin: 0 0 16px;
+    }
+    .kea-official-btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: linear-gradient(135deg, #f97316, #ea580c);
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      box-shadow: 0 6px 20px rgba(249, 115, 22, 0.35);
+      transition: all 0.3s ease;
+    }
+    .kea-official-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(249, 115, 22, 0.5);
+    }
+
+    .kea-updates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .kea-update-item {
+      background: var(--card-bg);
+      border: 1px solid var(--glass-border);
+      border-left: 4px solid var(--kea-orange);
+      border-radius: 16px;
+      padding: 18px 20px;
+      text-decoration: none;
+      color: var(--text-main);
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+    .kea-update-item:hover {
+      transform: translateY(-4px);
+      background: var(--input-bg);
+      border-color: var(--kea-orange);
+      box-shadow: 0 8px 24px rgba(249,115,22,0.12);
+    }
+    .kea-update-item.new-tag::after {
+      content: 'NEW';
+      position: absolute;
+      top: 10px; right: 12px;
+      background: var(--danger);
+      color: white;
+      font-size: 0.6rem;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+    }
+    .kea-update-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .kea-update-content { flex: 1; min-width: 0; }
+    .kea-update-title {
+      font-weight: 700;
+      font-size: 0.92rem;
+      line-height: 1.35;
+      margin-bottom: 5px;
+      padding-right: 40px;
+    }
+    .kea-update-meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .kea-update-meta .dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--kea-orange);
+      flex-shrink: 0;
+    }
+
+    .kea-section-divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 32px 0 20px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--text-main);
+    }
+    .kea-section-divider::before,
+    .kea-section-divider::after {
+      content: '';
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(to right, var(--kea-orange), transparent);
+      border-radius: 1px;
+    }
+    .kea-section-divider::after {
+      background: linear-gradient(to left, var(--kea-orange), transparent);
+    }
+
+    .kea-dcet26-banner {
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(249,115,22,0.08) 100%);
+      border: 2px solid var(--primary);
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 24px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .kea-dcet26-banner .info-col { flex: 1; min-width: 200px; }
+    .kea-dcet26-banner .info-col h3 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+      color: var(--primary);
+    }
+    .kea-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.88rem;
+    }
+    .kea-timeline-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      background: var(--card-bg);
+      border-radius: 10px;
+      border: 1px solid var(--glass-border);
+    }
+    .kea-timeline-label { color: var(--text-muted); font-weight: 600; }
+    .kea-timeline-date { font-weight: 800; color: var(--text-main); }
+    .kea-timeline-date.upcoming { color: var(--kea-orange); }
+    .kea-timeline-date.done { color: var(--success); }
+
+    #confetti { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 999; }
+  </style>
+</head>
+
+<body data-theme="light">
+  <canvas id="confetti"></canvas>
+  
+  <nav class="navbar glass-panel" aria-label="Primary navigation">
+    <div class="brand">
+      <img src="https://yt3.googleusercontent.com/Y1bhU9G7TB_P1dddnQtfOcDPG0jfe-g-nkVXuQkiCGwttR94cheiUUz2Dryi_WWCaHCDWatW=s160-c-k-c0x00ffffff-no-rj" alt="ND Academy Logo" class="brand-logo" />
+      <div class="brand-text-col">
+          <span class="brand-title">ND Academy</span>
+          <div class="brand-taglines">
+            <span>Believe Us</span>
+            <span>Join Us</span>
+            <span>See The Changes</span>
+          </div>
+      </div>
+    </div>
+
+    <div class="nav-actions">
+      <a href="tel:+919538847394" class="header-phone">📞 +91 95388 47394</a>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="tabs">☰</button>
+      <div class="tabs-container" id="tabs" role="tablist" aria-label="Sections">
+        <div class="tabs">
+            <button class="tab" role="tab" aria-selected="true" aria-controls="coaching" id="tab-coaching" data-target="coaching" type="button">COACHING INFO</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="videos" id="tab-videos" data-target="videos" type="button">▶️ DCET VIDEOS</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="predictor" id="tab-predictor" data-target="predictor" type="button">📊 DCET RANK PREDICTOR</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="calculator" id="tab-calculator" data-target="calculator" type="button">🧮 CGPA Calculator</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="college" id="tab-college" data-target="college" type="button">🏛️ College Finder</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="kea" id="tab-kea" data-target="kea" type="button">🔔 KEA Updates</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="notes" id="tab-notes" data-target="notes" type="button">📝 Notes</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="achievements" id="tab-achievements" data-target="achievements" type="button">NDA REVIEWS</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="about" id="tab-about" data-target="about" type="button">👤 About</button>
+        </div>
+      </div>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">☀️</button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- COACHING INFO -->
+    <section id="coaching" role="tabpanel" aria-labelledby="tab-coaching">
+      <div class="panel glass-panel">
+        <h1 class="page-title">DCET ONLINE LIVE COACHING</h1>
+
+        <div class="section-head" style="justify-content: center; margin-top: 0; font-size: 1.8rem; letter-spacing: 1px;">🏆 OUR RESULTS, OUR PRIDE</div>
+        
+        <div class="toppers-grid">
+            <div class="topper-card">
+                <img src="https://iili.io/qF2P1Q1.png" alt="DCET 2025 2nd Rank" class="topper-img-fixed" onclick="openModal(this.src)">
+                <div style="font-weight: 900; color: var(--primary); font-size: 1.6rem; letter-spacing: 1px;">DCET 2025</div>
+                <div style="font-weight: 900; font-size: 1.9rem; color: var(--danger); margin-top: 4px; text-transform: uppercase;">2ND RANK</div>
+                <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin-top: 8px;">PARIKSHITH B</div>
+            </div>
+            <div class="topper-card">
+                <img src="https://iili.io/qF2PQZ7.png" alt="DCET 2024 1st Rank" class="topper-img-fixed" onclick="openModal(this.src)">
+                <div style="font-weight: 900; color: var(--primary); font-size: 1.6rem; letter-spacing: 1px;">DCET 2024</div>
+                <div style="font-weight: 900; font-size: 1.9rem; color: var(--danger); margin-top: 4px; text-transform: uppercase;">1ST RANK</div>
+                <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin-top: 8px;">KIRAN CHAVAN</div>
+            </div>
+            <div class="topper-card">
+                <img src="https://iili.io/qF2i194.png" alt="DCET 2023 9th Rank" class="topper-img-fixed" onclick="openModal(this.src)">
+                <div style="font-weight: 900; color: var(--primary); font-size: 1.6rem; letter-spacing: 1px;">DCET 2023</div>
+                <div style="font-weight: 900; font-size: 1.9rem; color: var(--danger); margin-top: 4px; text-transform: uppercase;">9TH RANK</div>
+                <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin-top: 8px;">NAGAPRASAD NAIK</div>
+            </div>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-track" id="toppersCarousel">
+                <img src="https://iili.io/q2sKOCP.png" alt="Scroller Image 1" class="carousel-img" onclick="openModal(this.src)">
+                <img src="https://iili.io/q2sKp9f.jpg" alt="Scroller Image 2" class="carousel-img" onclick="openModal(this.src)">
+                <img src="https://iili.io/q2sf3P9.png" alt="Scroller Image 3" class="carousel-img" onclick="openModal(this.src)">
+                <img src="https://iili.io/q2sfnAx.png" alt="Scroller Image 4" class="carousel-img" onclick="openModal(this.src)">
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <span class="coach-label">SHORT TERM BATCH</span>
+            <h2>STARTED DEC 26TH</h2>
+            <p style="font-size:1.1rem; margin:10px 0;"><b>MONDAY - FRIDAY</b></p>
+            <p>Evening 2 classes from <b>7.00 PM</b></p>
+            <a href="https://play.google.com/store/apps/details?id=co.loki.vnlvn" target="_blank" class="btn" style="margin-top:16px; max-width:300px;">
+                Download App To Join 📲
+            </a>
+        </div>
+
+        <div class="section-head">🎓 Select Your Course</div>
+        <div class="resource-grid">
+            <a class="course-card" href="https://vnlvn.courses.store/765254" target="_blank">
+                <span class="coach-label" style="background:var(--accent);">LIVE</span>
+                <b style="display:block; font-size:1.2rem; margin-bottom:8px;">Short Term Live Coaching</b>
+                <ul class="course-details">
+                    <li>✅ Interactive Live Classes</li>
+                    <li>✅ Complete Syllabus Coverage</li>
+                    <li>✅ Doubt Clearing Sessions</li>
+                </ul>
+                <span class="app-link-text">Join Now ↗</span>
+            </a>
+            <a class="course-card" href="https://vnlvn.courses.store/538560" target="_blank">
+                <span class="coach-label" style="background:var(--accent2);">VIDEO</span>
+                <b style="display:block; font-size:1.2rem; margin-bottom:8px;">Recorded Video Course</b>
+                <ul class="course-details">
+                    <li>✅ Learn at Your Pace</li>
+                    <li>✅ 24/7 Access to Videos</li>
+                    <li>✅ Previous Year Papers</li>
+                </ul>
+                <span class="app-link-text">Start Learning ↗</span>
+            </a>
+            <a class="course-card" href="https://vnlvn.courses.store/393139" target="_blank">
+                <span class="coach-label" style="background:var(--warning);">TESTS</span>
+                <b style="display:block; font-size:1.2rem; margin-bottom:8px;">LMR PPTs & Mock Tests</b>
+                <ul class="course-details">
+                    <li>✅ Chapter-wise Mock Tests</li>
+                    <li>✅ Last Minute Revision PPTs</li>
+                    <li>✅ Accurate Cutoff PDFs</li>
+                </ul>
+                <span class="app-link-text">Practice Now ↗</span>
+            </a>
+        </div>
+
+        <div class="section-head">📺 Watch Demos & Help</div>
+        <div class="demo-grid">
+            <a class="demo-card" href="https://youtube.com/shorts/I8PwCAJmyWE" target="_blank">
+                <div class="demo-icon-area" style="padding:0;">
+                    <img src="https://iili.io/q3fize1.jpg" alt="Free Demo Classes Thumbnail" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="demo-content">
+                    <span class="demo-title">Free Demo Classes</span>
+                    <span class="demo-desc">Watch a sample class to understand our teaching style.</span>
+                </div>
+            </a>
+            <a class="demo-card" href="https://youtube.com/shorts/QVDSvKQ1wJM?feature=share" target="_blank">
+                <div class="demo-icon-area">📱</div>
+                <div class="demo-content">
+                    <span class="demo-title">How to access free content</span>
+                    <span class="demo-desc">A quick tutorial on accessing live classes on the App.</span>
+                </div>
+            </a>
+            <a class="demo-card" href="https://youtu.be/9R9aLnSvyFU" target="_blank">
+                <div class="demo-icon-area" style="padding:0;">
+                    <img src="https://iili.io/q3fsI3l.jpg" alt="Course Details Thumbnail" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="demo-content">
+                    <span class="demo-title">Course Details</span>
+                    <span class="demo-desc">Full breakdown of the DCET 2026 coaching program.</span>
+                </div>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section id="videos" role="tabpanel" aria-labelledby="tab-videos" hidden>
+      <div class="panel glass-panel">
+        <h1 class="page-title">DCET VIDEOS</h1>
+        <p class="subtitle">Complete YouTube Playlists</p>
+
+        <div class="demo-grid">
+            <a class="demo-card" href="https://www.youtube.com/playlist?list=PLFmaAziCl7SXWqXrgBi2Wrw1ZDZdKh6AK" target="_blank">
+                <div class="demo-icon-area">▶️</div>
+                <div class="demo-content">
+                    <span class="demo-title">DCET 2026 VIDEO PLAYLIST</span>
+                    <span class="demo-desc">Watch Playlist ↗</span>
+                </div>
+            </a>
+            <a class="demo-card" href="https://youtube.com/playlist?list=PLFmaAziCl7SX-UZGQCtmf00Jnu0cizpm8&si=fXCxfdoIMHozOYf3" target="_blank">
+                <div class="demo-icon-area">▶️</div>
+                <div class="demo-content">
+                    <span class="demo-title">ND Academy DCET Coaching ALL Subject</span>
+                    <span class="demo-desc">Watch Playlist ↗</span>
+                </div>
+            </a>
+            <a class="demo-card" href="https://www.youtube.com/playlist?list=PLFmaAziCl7SXACnYRgsuTW91AQ2O34-Nh" target="_blank">
+                <div class="demo-icon-area">▶️</div>
+                <div class="demo-content">
+                    <span class="demo-title">C25 MATHS-1 VIDEOS</span>
+                    <span class="demo-desc">Watch Playlist ↗</span>
+                </div>
+            </a>
+            <a class="demo-card" href="https://www.youtube.com/playlist?list=PLFmaAziCl7SX-6yzh7lOT9XUYSMzh0lZM" target="_blank">
+                <div class="demo-icon-area">▶️</div>
+                <div class="demo-content">
+                    <span class="demo-title">C25 MATHS-2 VIDEOS</span>
+                    <span class="demo-desc">Watch Playlist ↗</span>
+                </div>
+            </a>
+            <a class="demo-card" href="https://www.youtube.com/playlist?list=PLFmaAziCl7SXj4VHj-0ND0G-rXMwFTvzo" target="_blank">
+                <div class="demo-icon-area">▶️</div>
+                <div class="demo-content">
+                    <span class="demo-title">C25 DIGITAL ELECTRONICS-1 1 SEM EC VIDEOS</span>
+                    <span class="demo-desc">Watch Playlist ↗</span>
+                </div>
+            </a>
+            <a class="demo-card" href="https://www.youtube.com/playlist?list=PLFmaAziCl7SVpyoW7MHiXe3Oo83NwXP_O" target="_blank">
+                <div class="demo-icon-area">▶️</div>
+                <div class="demo-content">
+                    <span class="demo-title">C25 BDLCO 1 SEM CS VIDEOS</span>
+                    <span class="demo-desc">Watch Playlist ↗</span>
+                </div>
+            </a>
+            <a class="demo-card" href="https://www.youtube.com/playlist?list=PLFmaAziCl7SV16HRmmI7USHALJjPr1zKT" target="_blank">
+                <div class="demo-icon-area">▶️</div>
+                <div class="demo-content">
+                    <span class="demo-title">C20 MATHS VIDEOS</span>
+                    <span class="demo-desc">Watch Playlist ↗</span>
+                </div>
+            </a>
+            <a class="demo-card" href="https://www.youtube.com/playlist?list=PLFmaAziCl7SXN6ImW1qATsVM7bZBbKJVL" target="_blank">
+                <div class="demo-icon-area">▶️</div>
+                <div class="demo-content">
+                    <span class="demo-title">DIPLOMA EXAM RELATED VIDEOS</span>
+                    <span class="demo-desc">Watch Playlist ↗</span>
+                </div>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RANK PREDICTOR -->
+    <section id="predictor" role="tabpanel" aria-labelledby="tab-predictor" hidden>
+      <div class="panel glass-panel">
+        <h1 class="page-title">DCET RANK PREDICTOR</h1>
+        <p class="subtitle">AI-Powered Estimation • 2026</p>
+
+        <div class="grid" aria-label="Rank predictor inputs">
+          <div>
+            <label for="cgpa">Diploma CGPA</label>
+            <input id="cgpa" type="number" inputmode="decimal" min="0" max="10" step="0.01" placeholder="9.75" />
+          </div>
+          <div>
+            <label for="percent">Diploma Percentage (%)</label>
+            <input id="percent" type="number" inputmode="decimal" min="0" max="100" step="0.01" placeholder="90.00" />
+          </div>
+          <div class="full">
+            <label for="marks">Expected DCET Marks (0–100)</label>
+            <input id="marks" type="number" inputmode="numeric" min="0" max="100" step="1" placeholder="85" />
+          </div>
+        </div>
+
+        <button class="btn" id="predictBtn" type="button">CALCULATE RANK 🚀</button>
+
+        <div id="rankBox" class="rank-box" aria-live="polite">
+          <div style="font-size:0.85rem; text-transform:uppercase; letter-spacing:1px; font-weight:700; color:var(--text-muted);">
+            Estimated Rank
+          </div>
+          <div class="rank-big" id="rankVal">—</div>
+          <div style="font-size:1.1rem; margin-bottom:20px; font-weight:600;">
+            Merit Score: <span id="meritVal" style="color:var(--accent);">0.00</span>
+          </div>
+          <button class="btn" id="toCollegeBtn" type="button">Find Colleges ➜</button>
+        </div>
+
+        <p class="note">
+          <b>Note:</b> Rank prediction is based on historical trends. The College Finder below uses
+          <b>verified KEA Session‑2 (2025) "Rest of Karnataka" GM</b> cutoffs.
+        </p>
+      </div>
+    </section>
+
+    <!-- CGPA CALCULATOR -->
+    <section id="calculator" role="tabpanel" aria-labelledby="tab-calculator" hidden>
+        <div class="panel glass-panel">
+            <h1 class="page-title">DIPLOMA CGPA CALCULATOR</h1>
+            <p class="subtitle">Diploma Final CGPA (132-Credit Scheme)</p>
+
+            <div id="sem-inputs-container" class="sem-inputs-container"></div>
+
+            <div class="calc-actions">
+                <button class="btn secondary" onclick="resetCalculator()" style="flex:1;">Clear 🔄</button>
+                <button class="btn" onclick="calculateCGPA()" style="flex:2;">Calculate Score 🚀</button>
+            </div>
+
+            <div id="cgpaResultBox" class="result-overlay">
+                <div id="cgpaBadge" class="result-badge">Distinction</div>
+                <div style="font-size:0.9rem; color:var(--text-muted); text-transform:uppercase; font-weight:700;">Your Final CGPA</div>
+                <div class="big-score" id="finalCgpaVal">0.00</div>
+                <div class="details-row">
+                    <span>Percentage: <b style="color:var(--text-main)" id="finalPercentVal">0%</b></span>
+                    <span>Total Credits: <b style="color:var(--text-main)" id="finalCreditsVal">0</b></span>
+                </div>
+                <button class="btn" id="toPredictorBtn" type="button" style="margin-top: 20px; max-width: 300px; margin-left: auto; margin-right: auto; display: flex;">
+                    Calculate DCET Rank ➜
+                </button>
+            </div>
+            
+            <p class="note" style="margin-top:24px;">
+                <b>Note:</b> You can directly type your SGPA into the boxes for all semesters. For Sems 5 & 6, you also have the option to enter your marks and the system will automatically compute the SGPA (External Theory &lt; 24 is considered a Fail).
+            </p>
+        </div>
+    </section>
+
+    <!-- COLLEGE FINDER -->
+    <section id="college" role="tabpanel" aria-labelledby="tab-college" hidden>
+      <div class="panel glass-panel">
+        <h1 class="page-title">COLLEGE FINDER</h1>
+        <p class="subtitle">Official KEA Data • Session-2 Cutoffs</p>
+
+        <div style="background: var(--glass); border: 2px solid var(--primary); border-radius: 24px; padding: 24px; text-align: center; margin-bottom: 40px; box-shadow: var(--shadow);">
+            <h2 style="font-size: 1.6rem; color: var(--primary); margin: 0 0 16px 0; font-family: 'Outfit', sans-serif;">PERSONALISED OPTION ENTRY CUTOFF LIST</h2>
+            <img src="https://iili.io/q2th21f.jpg" alt="Personalised Option Entry" onclick="openModal(this.src)" style="width: 100%; max-width: 500px; border-radius: 16px; border: 3px solid var(--glass-border); cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+            <h3 style="margin: 20px 0 16px 0; font-size: 1.4rem; color: var(--text-main);">WANT TO MAKE YOURS?</h3>
+            <a href="https://api.whatsapp.com/send?phone=919538847394&text=I%20WANT%20PERSONALISED%20OPTION%20ENTRY%20SHEET%20PDF" target="_blank" class="btn" style="max-width: 350px; margin: 0 auto; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4);">
+                Message Us on WhatsApp 💬
+            </a>
+        </div>
+
+        <div class="finder-bar">
+          <div class="row">
+            <div>
+              <label for="cpRank">Enter Your Rank</label>
+              <input id="cpRank" type="number" inputmode="numeric" min="1" step="1" placeholder="e.g., 1500" />
+            </div>
+            <div>
+              <label for="branchSelect">Preferred Branch</label>
+              <select id="branchSelect">
+                  <option value="ALL">All Branches</option>
+                  <option value="CSE">CSE - Computer Science</option>
+                  <option value="ISE">ISE - Information Science</option>
+                  <option value="AIML">AI & ML</option>
+                  <option value="AIDS">AI & Data Science</option>
+                  <option value="ECE">ECE - Electronics</option>
+                  <option value="EEE">EEE - Electrical</option>
+                  <option value="ME">Mechanical</option>
+                  <option value="CIVIL">Civil</option>
+              </select>
+            </div>
+            <button class="btn" id="searchBtn" type="button" style="margin-top:0;">Search Colleges</button>
+          </div>
+          <p style="margin:12px 0 0; font-size:0.85rem; color:var(--text-muted);">
+            Data Source: KEA NIAS "DCET‑2025 Session‑2 Provisional Allotment" (GM/ROK).
+          </p>
+        </div>
+
+        <div id="resultsArea" style="display:none;">
+            <div class="cols" aria-label="College results">
+              <div class="col" id="colCSE">
+                <h3 style="color:var(--accent);">💻 CSE / ISE</h3>
+                <div id="outCSE" class="cards"></div>
+              </div>
+              <div class="col" id="colAI">
+                <h3 style="color:var(--accent2);">🤖 AI / ML / DS</h3>
+                <div id="outAI" class="cards"></div>
+              </div>
+              <div class="col" id="colECE">
+                <h3 style="color:var(--warning);">📡 E & C</h3>
+                <div id="outECE" class="cards"></div>
+              </div>
+            </div>
+
+            <details id="otherBranchesDetails">
+              <summary>Explore Other Branches (EEE, Mech, Civil)</summary>
+              <div class="cols" style="margin-top:20px;">
+                <div class="col" id="colEEE">
+                  <h3>⚡ EEE</h3>
+                  <div id="outEEE" class="cards"></div>
+                </div>
+                <div class="col" id="colME">
+                  <h3>⚙️ Mechanical</h3>
+                  <div id="outME" class="cards"></div>
+                </div>
+                <div class="col" id="colCIVIL">
+                  <h3>🏗️ Civil</h3>
+                  <div id="outCIVIL" class="cards"></div>
+                </div>
+              </div>
+            </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KEA UPDATES SECTION ===== -->
+    <section id="kea" role="tabpanel" aria-labelledby="tab-kea" hidden>
+      <div class="panel glass-panel">
+        <h1 class="page-title">KEA UPDATES</h1>
+        <p class="subtitle">Official Notifications • DCET 2025 / 2026</p>
+
+        <!-- Hero Banner -->
+        <div class="kea-hero">
+          <div class="kea-hero-title">🏛️ Karnataka Examinations Authority</div>
+          <p class="kea-hero-sub">All official DCET notifications, forms &amp; documents are available on the KEA portal</p>
+          <a href="https://cetonline.karnataka.gov.in/kea/dcet2025" target="_blank" class="kea-official-btn">
+            🔗 Visit KEA DCET 2025 Official Page
+          </a>
+        </div>
+
+        <!-- DCET 2026 Timeline -->
+        <div class="kea-dcet26-banner">
+          <div class="info-col">
+            <h3>📅 DCET 2026 Key Dates</h3>
+            <div class="kea-timeline">
+              <div class="kea-timeline-row">
+                <span class="kea-timeline-label">Exam Date</span>
+                <span class="kea-timeline-date upcoming">May 23, 2026</span>
+              </div>
+              <div class="kea-timeline-row">
+                <span class="kea-timeline-label">Application Opens</span>
+                <span class="kea-timeline-date upcoming">April 25, 2026</span>
+              </div>
+              <div class="kea-timeline-row">
+                <span class="kea-timeline-label">Application Last Date</span>
+                <span class="kea-timeline-date upcoming">May 10, 2026</span>
+              </div>
+              <div class="kea-timeline-row">
+                <span class="kea-timeline-label">Admit Card</span>
+                <span class="kea-timeline-date upcoming">May 26, 2026</span>
+              </div>
+              <div class="kea-timeline-row">
+                <span class="kea-timeline-label">Result / Rank Card</span>
+                <span class="kea-timeline-date upcoming">June 2026</span>
+              </div>
+              <div class="kea-timeline-row">
+                <span class="kea-timeline-label">Counselling</span>
+                <span class="kea-timeline-date upcoming">July 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DCET 2025 Official Links -->
+        <div class="kea-section-divider">📋 DCET 2025 — Official Notifications & Links</div>
+
+        <div class="kea-updates-grid">
+
+          <a href="https://cetonline.karnataka.gov.in/kea/dcet2025" target="_blank" class="kea-update-item new-tag">
+            <span class="kea-update-icon">🏠</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Official Home Page</div>
+              <div class="kea-update-meta"><span class="dot"></span> KEA Official Portal</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/dcet_print2025/forms/login.aspx" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">📄</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Application Print / Login</div>
+              <div class="kea-update-meta"><span class="dot"></span> Download Application Form</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/dipcet2025/Forms/Loginpage.aspx" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">🖊️</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Online Application Portal</div>
+              <div class="kea-update-meta"><span class="dot"></span> Apply / Fill Application Online</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/keawebentry456/dcet2025/KEA_12X28Cms_engenglish.pdf" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">📰</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Official Brochure / Notification (PDF)</div>
+              <div class="kea-update-meta"><span class="dot"></span> English Version — KEA Official</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/dcet2025" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">🎟️</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Admit Card / Hall Ticket</div>
+              <div class="kea-update-meta"><span class="dot"></span> Download from KEA DCET 2025 Page</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/dcet2025" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">📊</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Results / Rank Card</div>
+              <div class="kea-update-meta"><span class="dot"></span> Released June 24, 2025 — Download via App No. &amp; DOB</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/dcet2025" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">🔑</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Provisional Answer Key</div>
+              <div class="kea-update-meta"><span class="dot"></span> Challenge Answers via KEA Portal</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/dcet2025" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">🏛️</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Seat Allotment Results</div>
+              <div class="kea-update-meta"><span class="dot"></span> Round 1, 2 &amp; 3 Allotments — Aug 2025</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/dcet2025" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">📋</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Option Entry (Counselling)</div>
+              <div class="kea-update-meta"><span class="dot"></span> Choice Filling for Seat Allotment</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/dcet2025" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">✅</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Document Verification</div>
+              <div class="kea-update-meta"><span class="dot"></span> 36 Centres Across Karnataka</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/dcet2025" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">📌</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Cutoff Marks</div>
+              <div class="kea-update-meta"><span class="dot"></span> Session-wise Closing Ranks — All Categories</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/dcet2025" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">🗂️</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2025 Merit List</div>
+              <div class="kea-update-meta"><span class="dot"></span> Category-wise Rank List Published by KEA</div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- DCET 2026 Links -->
+        <div class="kea-section-divider">🚀 DCET 2026 — Upcoming Links</div>
+
+        <div class="kea-updates-grid">
+
+          <a href="https://cetonline.karnataka.gov.in/kea/" target="_blank" class="kea-update-item new-tag">
+            <span class="kea-update-icon">🏠</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">KEA Official Home Page</div>
+              <div class="kea-update-meta"><span class="dot"></span> All Latest Notifications Here</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">🖊️</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2026 Online Application Form</div>
+              <div class="kea-update-meta"><span class="dot"></span> Opens April 25, 2026 — via KEA Portal</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">📰</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2026 Information Brochure</div>
+              <div class="kea-update-meta"><span class="dot"></span> Syllabus, Eligibility &amp; Exam Pattern PDF</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">🎟️</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2026 Admit Card</div>
+              <div class="kea-update-meta"><span class="dot"></span> Expected May 26, 2026</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">🔑</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2026 Answer Key</div>
+              <div class="kea-update-meta"><span class="dot"></span> Expected June 2026 after Exam</div>
+            </div>
+          </a>
+
+          <a href="https://cetonline.karnataka.gov.in/kea/" target="_blank" class="kea-update-item">
+            <span class="kea-update-icon">📊</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET 2026 Result / Rank Card</div>
+              <div class="kea-update-meta"><span class="dot"></span> Expected June 2026 — via KEA Portal</div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Quick Help -->
+        <div class="section-head">📞 Need Help?</div>
+        <div class="kea-updates-grid">
+          <a href="https://api.whatsapp.com/send?phone=919538847394&text=I%20need%20help%20with%20DCET%202026" target="_blank" class="kea-update-item" style="border-left-color: var(--wa);">
+            <span class="kea-update-icon">💬</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">Ask ND Academy — WhatsApp</div>
+              <div class="kea-update-meta"><span class="dot" style="background:var(--wa);"></span> Get guidance from our experts</div>
+            </div>
+          </a>
+          <a href="https://t.me/ndacademyall" target="_blank" class="kea-update-item" style="border-left-color: var(--tg);">
+            <span class="kea-update-icon">✈️</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">ND Academy Telegram Channel</div>
+              <div class="kea-update-meta"><span class="dot" style="background:var(--tg);"></span> Instant DCET updates &amp; notifications</div>
+            </div>
+          </a>
+          <a href="https://whatsapp.com/channel/0029VaHQnoc0VycOQfijmW0J" target="_blank" class="kea-update-item" style="border-left-color: var(--wa);">
+            <span class="kea-update-icon">📢</span>
+            <div class="kea-update-content">
+              <div class="kea-update-title">DCET WhatsApp Channel</div>
+              <div class="kea-update-meta"><span class="dot" style="background:var(--wa);"></span> Latest KEA alerts &amp; coaching updates</div>
+            </div>
+          </a>
+        </div>
+
+        <p class="note" style="margin-top:24px;">
+          <b>Note:</b> All official links point to <b>cetonline.karnataka.gov.in</b> — the KEA portal. Some DCET 2026 links will become active only after KEA officially releases them. Bookmark this page for the latest updates, or follow our WhatsApp / Telegram channels to get notified instantly.
+        </p>
+      </div>
+    </section>
+
+    <!-- NOTES -->
+    <section id="notes" role="tabpanel" aria-labelledby="tab-notes" hidden>
+      <div class="panel glass-panel">
+        <h1 class="page-title">STUDY MATERIALS</h1>
+        <p class="subtitle">Curated Notes & Resources</p>
+        
+        <div class="resource-grid">
+            <a class="doc course-card" href="https://drive.google.com/drive/folders/1dSVWAgyCqh_ZWZReRiWrNcdAvTfjEiiH" target="_blank" style="text-align:center;">
+                <span style="font-size:3rem; display:block; margin-bottom:10px;">📂</span>
+                <b style="font-size:1.2rem;">DCET Notes Repository 1</b>
+                <small style="margin-top:10px;">Click to access study materials on Google Drive.</small>
+                <span class="app-link-text">Open Drive ↗</span>
+            </a>
+            <a class="doc course-card" href="https://drive.google.com/drive/folders/1a3TzS4Jqi_bxzHChLWLnTzk5OgOSdt97" target="_blank" style="text-align:center;">
+                <span style="font-size:3rem; display:block; margin-bottom:10px;">📚</span>
+                <b style="font-size:1.2rem;">DCET Notes Repository 2</b>
+                <small style="margin-top:10px;">Additional resources and comprehensive question banks.</small>
+                <span class="app-link-text">Open Drive ↗</span>
+            </a>
+        </div>
+        
+        <p class="note" style="text-align:center; margin-top:30px;">
+            These folders contain essential materials for your preparation. Make sure you are logged into your Google Account.
+        </p>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS / REVIEWS -->
+    <section id="achievements" role="tabpanel" aria-labelledby="tab-achievements" hidden>
+      <div class="panel glass-panel">
+        <h1 class="page-title">NDA REVIEWS</h1>
+        <p class="subtitle">Excellence in Action</p>
+
+        <div style="text-align: center; margin-top: 40px; margin-bottom: 40px; display: flex; flex-direction: column; gap: 16px; align-items: center;">
+            <a href="https://drive.google.com/file/d/1V1X2VFlWs1avm79pO2fCxDuZeBwxWHow/view?usp=drive_link" target="_blank" class="btn" style="width: 100%; max-width: 450px; font-size: 1.1rem; padding: 18px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <span style="font-size: 1.4rem;">🔗</span> NDA 2025 BATCH STUDENTS REVIEW
+            </a>
+            <a href="https://drive.google.com/file/d/1sNd3x690pHGXMJfzusIRsnDuZdLGM8ZR/view?usp=drive_link" target="_blank" class="btn" style="width: 100%; max-width: 450px; font-size: 1.1rem; padding: 18px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <span style="font-size: 1.4rem;">🔗</span> NDA 2024 BATCH STUDENTS REVIEW
+            </a>
+            <a href="https://drive.google.com/file/d/1SnHbs2vkJ9FHeg_6vg_1hHBQd7N6Rw9h/view?usp=drive_link" target="_blank" class="btn" style="width: 100%; max-width: 450px; font-size: 1.1rem; padding: 18px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <span style="font-size: 1.4rem;">🔗</span> NDA 2023 BATCH STUDENTS REVIEW
+            </a>
+        </div>
+        
+        <p class="note" style="text-align: center;">
+            Celebrating the milestones and success stories of our students and academy. Click the buttons above to read detailed reviews from our past batches.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" role="tabpanel" aria-labelledby="tab-about" hidden>
+      <div class="panel glass-panel">
+        <h1 class="page-title">ABOUT THE MENTOR</h1>
+        <p class="subtitle">Guiding Future Engineers</p>
+        
+        <div class="about-card">
+            <div style="font-size:1.5rem; font-weight:900; color:var(--primary); margin-bottom:4px;">UMESH K S</div>
+            <div style="font-size:0.9rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:1px;">FOUNDER ND ACADEMY</div>
+            <div style="font-size:0.9rem; color:var(--text-main);">Giri Nagar, II Phase, Banashankari, Bengaluru</div>
+            <div style="font-size:1.1rem; color:var(--accent); font-weight:800; margin-top:8px;">📞 +91 95388 47394</div>
+            
+            <div class="quote-box">
+                "Education is not just about passing exams, it's about empowering students to understand their potential in their own language."
+            </div>
+            
+            <p style="max-width:600px; margin:0 auto; line-height:1.6;">
+                <b>Namaskara! 🙏</b> This channel is dedicated to helping Diploma students in a unique way. 
+                We focus on improving learning skills, providing motivation, and simplifying technical concepts in native language.
+            </p>
+        </div>
+
+        <div class="section-head" style="justify-content:center;">🌐 Connect With Us</div>
+        
+        <div class="social-grid">
+            <a href="https://play.google.com/store/apps/details?id=co.loki.vnlvn" target="_blank" class="social-btn" style="color:var(--ps); border-bottom: 3px solid var(--ps);">
+                <span class="social-icon">📲</span><span>App (PlayStore)</span>
+            </a>
+            <a href="https://www.youtube.com/@nammdiploma2560" target="_blank" class="social-btn" style="color:var(--yt); border-bottom: 3px solid var(--yt);">
+                <span class="social-icon">▶️</span><span>YouTube</span>
+            </a>
+            <a href="https://whatsapp.com/channel/0029VaHQnoc0VycOQfijmW0J" target="_blank" class="social-btn" style="color:var(--wa); border-bottom: 3px solid var(--wa);">
+                <span class="social-icon">💬</span><span>DCET WA Channel</span>
+            </a>
+            <a href="https://whatsapp.com/channel/0029Va4Sz86KWEKqz9Pixu46" target="_blank" class="social-btn" style="color:var(--wa); border-bottom: 3px solid var(--wa);">
+                <span class="social-icon">💬</span><span>Diploma WA Channel</span>
+            </a>
+            <a href="https://t.me/ndacademyall" target="_blank" class="social-btn" style="color:var(--tg); border-bottom: 3px solid var(--tg);">
+                <span class="social-icon">✈️</span><span>Telegram</span>
+            </a>
+            <a href="https://www.instagram.com/ndacademy23?igsh=MTMwNTFrdzYwamV0ZA==" target="_blank" class="social-btn" style="color:var(--ig); border-bottom: 3px solid var(--ig);">
+                <span class="social-icon">📸</span><span>Instagram</span>
+            </a>
+            <a href="https://facebook.com/nammdiploma" target="_blank" class="social-btn" style="color:var(--fb); border-bottom: 3px solid var(--fb);">
+                <span class="social-icon">📘</span><span>Facebook</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=919538847394" target="_blank" class="social-btn" style="color:var(--wa); border-bottom: 3px solid var(--wa);">
+                <span class="social-icon">📞</span><span>Chat Mentor</span>
+            </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="imgModal" class="image-modal" onclick="closeModal()">
+      <span class="modal-close">×</span>
+      <img class="modal-content" id="img01">
+  </div>
+
+  <script>
+    "use strict";
+
+    // ---------- NAV ----------
+    const tabsContainer = document.getElementById("tabs");
+    const menuBtn = document.getElementById("menuBtn");
+    const themeBtn = document.getElementById("themeBtn");
+    const tabButtons = Array.from(document.querySelectorAll(".tab"));
+    const panels = Array.from(document.querySelectorAll("main > section[role='tabpanel']"));
+
+    function setActivePanel(id){
+      for (const p of panels) p.hidden = (p.id !== id);
+      for (const b of tabButtons){
+        const isActive = b.dataset.target === id;
+        b.setAttribute("aria-selected", String(isActive));
+        if (isActive) b.focus({preventScroll:true});
+      }
+      if (window.innerWidth < 1100){
+        tabsContainer.dataset.open = "false";
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      window.scrollTo({top:0, behavior:"smooth"});
+    }
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener("click", () => setActivePanel(btn.dataset.target));
+    });
+
+    if (menuBtn){
+      menuBtn.addEventListener("click", () => {
+        const open = tabsContainer.dataset.open === "true";
+        tabsContainer.dataset.open = String(!open);
+        menuBtn.setAttribute("aria-expanded", String(!open));
+      });
+    }
+
+    themeBtn.addEventListener("click", () => {
+      const body = document.body;
+      const isLight = body.getAttribute("data-theme") === "light";
+      body.setAttribute("data-theme", isLight ? "dark" : "light");
+      themeBtn.textContent = isLight ? "☀️" : "🌙";
+    });
+
+    // ---------- IMAGE MODAL ----------
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("img01");
+    function openModal(src) { modal.classList.add("show"); modalImg.src = src; }
+    function closeModal() { modal.classList.remove("show"); }
+
+    // ---------- TOPPERS CAROUSEL SCRIPT ----------
+    const track = document.getElementById('toppersCarousel');
+    if (track) {
+        let currentIndex = 0;
+        const slides = track.children.length;
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides;
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }, 3000);
+    }
+
+    // ---------- RANK PREDICTOR LOGIC ----------
+    const cgpaEl = document.getElementById("cgpa");
+    const percentEl = document.getElementById("percent");
+    const marksEl = document.getElementById("marks");
+    const predictBtn = document.getElementById("predictBtn");
+    const rankBox = document.getElementById("rankBox");
+    const rankValEl = document.getElementById("rankVal");
+    const meritValEl = document.getElementById("meritVal");
+    const toCollegeBtn = document.getElementById("toCollegeBtn");
+
+    const ranges = [
+      { min: 91.8, max: 93.25, range: "1-10" },
+      { min: 90.6, max: 91.79, range: "11-20" },
+      { min: 89.98, max: 90.59, range: "21-30" },
+      { min: 89.5, max: 89.97, range: "31-40" },
+      { min: 89.1, max: 89.49, range: "41-50" },
+      { min: 89.0, max: 89.09, range: "51-60" },
+      { min: 88.3, max: 88.99, range: "61-70" },
+      { min: 88.0, max: 88.29, range: "71-80" },
+      { min: 87.8, max: 87.99, range: "81-90" },
+      { min: 87.6, max: 87.79, range: "91-100" },
+      { min: 86.9, max: 87.59, range: "100-125" },
+      { min: 86.5, max: 86.89, range: "126-150" },
+      { min: 86.2, max: 86.49, range: "151-175" },
+      { min: 85.5, max: 86.19, range: "176-200" },
+      { min: 84.6, max: 85.49, range: "200-250" },
+      { min: 84.0, max: 84.59, range: "250-300" },
+      { min: 83.65, max: 83.99, range: "300-350" },
+      { min: 82.7, max: 83.64, range: "350-400" },
+      { min: 82.2, max: 82.69, range: "400-450" },
+      { min: 81.5, max: 82.19, range: "450-500" },
+      { min: 80.8, max: 81.49, range: "500-600" },
+      { min: 80.1, max: 80.79, range: "600-700" },
+      { min: 79.4, max: 80.09, range: "700-800" },
+      { min: 78.5, max: 79.39, range: "800-900" },
+      { min: 77.6, max: 78.49, range: "900-1000" },
+      { min: 75.6, max: 77.59, range: "1000-1250" },
+      { min: 74.25, max: 75.59, range: "1250-1500" },
+      { min: 72.5, max: 74.24, range: "1500-1750" },
+      { min: 71.5, max: 72.49, range: "1750-2000" },
+      { min: 67.9, max: 71.49, range: "2000-3000" },
+      { min: 64.95, max: 67.89, range: "3000-4000" },
+      { min: 62.3, max: 64.94, range: "4000-5000" },
+      { min: 60.2, max: 62.29, range: "5000-6000" },
+      { min: 58.3, max: 60.19, range: "6000-7000" },
+      { min: 57.0, max: 58.29, range: "7000-8000" },
+      { min: 53.5, max: 56.99, range: "8000-10000" },
+      { min: 20.0, max: 53.49, range: "10000 ABOVE" }
+    ];
+
+    function clamp(n, a, b){ return Math.max(a, Math.min(b, n)); }
+
+    cgpaEl.addEventListener("input", () => {
+        const v = Number(cgpaEl.value);
+        if (!Number.isFinite(v)) return;
+        percentEl.value = ((v * 10) - 7.5).toFixed(2);
+    });
+    percentEl.addEventListener("input", () => {
+        const v = Number(percentEl.value);
+        if (!Number.isFinite(v)) return;
+        cgpaEl.value = ((v + 7.5) / 10).toFixed(2);
+    });
+
+    function predictRank(){
+        const p = Number(percentEl.value);
+        const m = Number(marksEl.value);
+        if (!Number.isFinite(p) || !Number.isFinite(m) || p < 0 || p > 100 || m < 0 || m > 100){
+            alert("Enter valid Percentage and Marks.");
+            return;
+        }
+        const merit = (p / 2) + (m / 2);
+        
+        let label = "10000 ABOVE";
+        let safeUpper = 15000;
+
+        for (const r of ranges){
+            if (merit >= r.min && merit <= r.max){
+                label = r.range;
+                if(label.includes("ABOVE") || label.includes("+")) {
+                    safeUpper = 15000;
+                } else {
+                    const parts = r.range.split("-").map(s => s.trim());
+                    safeUpper = parts.length > 1 ? Number(parts[1]) : Number(parts[0]);
+                }
+                break;
+            }
+        }
+        
+        if (merit > 93.25) { label = "1-10"; safeUpper = 10; }
+        else if (merit < 20) { label = "Unqualified"; safeUpper = 15000; }
+
+        rankValEl.textContent = label;
+        meritValEl.textContent = merit.toFixed(2);
+        rankBox.style.display = "block";
+        document.getElementById("cpRank").value = String(safeUpper);
+    }
+    predictBtn.addEventListener("click", predictRank);
+    toCollegeBtn.addEventListener("click", () => {
+        setActivePanel("college");
+        runCollegeFinder();
+    });
+
+    // ---------- CGPA TO PREDICTOR NAVIGATION ----------
+    const toPredictorBtn = document.getElementById("toPredictorBtn");
+    if (toPredictorBtn) {
+        toPredictorBtn.addEventListener("click", () => {
+            const calculatedCgpa = document.getElementById('finalCgpaVal').innerText;
+            const predictorCgpaInput = document.getElementById("cgpa");
+            predictorCgpaInput.value = calculatedCgpa;
+            predictorCgpaInput.dispatchEvent(new Event('input'));
+            setActivePanel("predictor");
+        });
+    }
+
+    // ---------- COLLEGE FINDER LOGIC ----------
+    const COLLEGES=[{code:"E005",short:"RVCE",name:"R.V. College",page:2,cutoffsGM:{CSE:21,ISE:93,CSE_AIML:42,ECE:49,EEE:221,ME:355,CIVIL:243}},{code:"E006",short:"MSRIT",name:"M S Ramaiah",page:3,cutoffsGM:{CSE:136,ISE:229,AIML:244,AIDS:134,CSE_AIML:245,ECE:103,EEE:404,ME:1393,CIVIL:788}},{code:"E009",short:"PESU (RR)",name:"PES Univ",page:5,cutoffsGM:{CSE:164,CSE_AIML:329,ECE:289,EEE:670,ME:874}},{code:"E001",short:"UVCE",name:"UVCE",page:1,cutoffsGM:{CSE:137,ISE:416,AIML:215,ECE:384,EEE:806,ME:742,CIVIL:1330}},{code:"E048",short:"BMSCE",name:"BMS College",page:18,cutoffsGM:{CSE:372,AIML:584,AIDS:612,ECE:420,ME:1385,CIVIL:2097}},{code:"E004",short:"Dr. AIT",name:"Dr. AIT",page:2,cutoffsGM:{CSE:425,ECE:1115,EEE:932,ME:4123,CIVIL:2719}},{code:"E007",short:"DSCE",name:"Dayananda Sagar",page:4,cutoffsGM:{CSE:619,ISE:978,AIML:1252,ECE:1011,EEE:1428,ME:2029,CIVIL:4830}},{code:"E008",short:"BIT",name:"Bangalore Inst",page:5,cutoffsGM:{CSE:964,ISE:1457,AIML:1262,ECE:1515,EEE:2562}},{code:"E126",short:"BMSIT",name:"BMSIT",page:46,cutoffsGM:{CSE:1827,AIML:2716,ECE:1322,EEE:1731,ME:2956,CIVIL:3983}},{code:"E105",short:"NMIT",name:"Nitte Meenakshi",page:38,cutoffsGM:{CSE:1968,ISE:3016,AIML:1999,AIDS:1835,ECE:2483,EEE:4021,ME:5585,CIVIL:16176}},{code:"E012",short:"Sir MVIT",name:"Sir MVIT",page:7,cutoffsGM:{CSE:3200,ISE:7261,AIML:2708,ECE:2800,EEE:2968,ME:4942,CIVIL:10797}},{code:"E118",short:"RNSIT",name:"RNSIT",page:44,cutoffsGM:{CSE:2201,CSE_AIML:3565,ECE:3797,EEE:2068}},{code:"E082",short:"JSSATE",name:"JSSATE",page:28,cutoffsGM:{CSE:4119,CSE_AIML:7257,ISE:6565,ECE:5151}},{code:"E097",short:"CMRIT",name:"CMRIT",page:34,cutoffsGM:{CSE:2337,ISE:6691,AIML:3600,AIDS:5191,CSE_AIML:3024,ECE:4648}},{code:"E099",short:"New Horizon",name:"New Horizon",page:35,cutoffsGM:{CSE:2636,AIML:2688,ECE:2773,EEE:3367,ME:7826}},{code:"E077",short:"Vidya Vikas",name:"Vidya Vikas",page:26,cutoffsGM:{CSE:10551,ISE:17860,ECE:5025,EEE:8338,CIVIL:19150}}];
+
+    const branchSelectEl=document.getElementById("branchSelect"),resultsArea=document.getElementById("resultsArea");
+    const outCSE=document.getElementById("outCSE"),outAI=document.getElementById("outAI"),outECE=document.getElementById("outECE"),outEEE=document.getElementById("outEEE"),outME=document.getElementById("outME"),outCIVIL=document.getElementById("outCIVIL");
+    const colCSE=document.getElementById("colCSE"),colAI=document.getElementById("colAI"),colECE=document.getElementById("colECE"),colEEE=document.getElementById("colEEE"),colME=document.getElementById("colME"),colCIVIL=document.getElementById("colCIVIL"),otherDetails=document.getElementById("otherBranchesDetails");
+
+    function statusFor(r,c){
+        if(!Number.isFinite(c)) return {label:"No data",cls:"na",chance:null};
+        if(r<=c){const ratio=c===0?0:(r/c);const chance=clamp(Math.round(70+(1-ratio)*29),70,99);return{label:"Likely",cls:"ok",chance}}
+        if(r<=c*1.10){const chance=clamp(Math.round(45-((r-c)/(c*0.10))*20),25,45);return{label:"Borderline",cls:"warn",chance}}
+        if(r<=c*1.25){const chance=clamp(Math.round(18-((r-c*1.10)/(c*0.15))*14),4,18);return{label:"Unlikely",cls:"danger",chance}}
+        return{label:"Very unlikely",cls:"danger",chance:1}
+    }
+
+    function makeCard(coll,bl,cut,rnk){
+        const st=statusFor(rnk,cut);
+        const d=document.createElement("div");d.className="card";
+        d.innerHTML=`<div class="badge ${st.cls}">${st.chance===null?"No data":`${st.chance}% • ${st.label}`}</div><div class="title">${coll.short} — ${bl}</div><div class="meta"><span>GM: ${Number.isFinite(cut)?cut:"—"}</span><span>${coll.code}</span></div>`;
+        return d;
+    }
+
+    function renderBranch(ct,k,lbl,rk){
+        ct.textContent="";const fr=document.createDocumentFragment();
+        const rows=COLLEGES.map(c=>({c,cut:c.cutoffsGM[k]})).sort((a,b)=>(Number.isFinite(a.cut)?a.cut:Infinity)-(Number.isFinite(b.cut)?b.cut:Infinity));
+        let s=0;for(const r of rows){if(!Number.isFinite(r.cut)||rk>r.cut*1.5)continue;fr.appendChild(makeCard(r.c,lbl,r.cut,rk));s++}
+        if(s===0)fr.innerHTML='<p class="note" style="font-size:0.8rem">No options in reasonable range.</p>';
+        ct.appendChild(fr);
+    }
+
+    function renderBranchGroup(ct,gr,rk){
+        ct.textContent="";const fr=document.createDocumentFragment();const exp=[];
+        for(const c of COLLEGES){for(const [k,l] of gr){const cut=c.cutoffsGM[k];if(Number.isFinite(cut)&&rk<=cut*1.5)exp.push({c,cut,l})}}
+        exp.sort((a,b)=>a.cut-b.cut);let s=0;for(const r of exp){fr.appendChild(makeCard(r.c,r.l,r.cut,rk));s++}
+        if(s===0)fr.innerHTML='<p class="note" style="font-size:0.8rem">No options in reasonable range.</p>';
+        ct.appendChild(fr);
+    }
+
+    function runCollegeFinder(){
+      const cpRankEl = document.getElementById("cpRank");
+      const r=Number(cpRankEl.value);
+      if(!Number.isFinite(r)||r<1){alert("Enter a valid rank.");return}
+      
+      resultsArea.style.display="block";
+      const p=branchSelectEl.value;
+      renderBranch(outCSE,"CSE","CSE",r);
+      
+      const tmp=document.createElement("div");tmp.className="cards";tmp.style.marginTop="8px";
+      outCSE.appendChild(document.createElement("p")).innerHTML="<b>ISE Options</b>";
+      outCSE.lastChild.className="note";outCSE.lastChild.style.padding="8px";
+      outCSE.appendChild(tmp);
+      renderBranch(tmp,"ISE","ISE",r);
+      
+      renderBranchGroup(outAI,[["AIML","AI & ML"],["AIDS","AI & DS"],["CSE_AIML","CSE(AI)"]],r);
+      renderBranch(outECE,"ECE","ECE",r);renderBranch(outEEE,"EEE","EEE",r);renderBranch(outME,"ME","Mech",r);renderBranch(outCIVIL,"CIVIL","Civil",r);
+      
+      colCSE.style.display="none";colAI.style.display="none";colECE.style.display="none";colEEE.style.display="none";colME.style.display="none";colCIVIL.style.display="none";otherDetails.style.display="none";
+      if(p==="ALL"){colCSE.style.display=colAI.style.display=colECE.style.display=otherDetails.style.display=colEEE.style.display=colME.style.display=colCIVIL.style.display="block"}
+      else if(p==="CSE"||p==="ISE")colCSE.style.display="block";
+      else if(p==="AIML"||p==="AIDS")colAI.style.display="block";
+      else if(p==="ECE")colECE.style.display="block";
+      else if(p==="EEE"){otherDetails.style.display="block";otherDetails.open=true;colEEE.style.display="block"}
+      else if(p==="ME"){otherDetails.style.display="block";otherDetails.open=true;colME.style.display="block"}
+      else if(p==="CIVIL"){otherDetails.style.display="block";otherDetails.open=true;colCIVIL.style.display="block"}
+    }
+    document.getElementById("searchBtn").addEventListener("click",runCollegeFinder);
+    document.getElementById("cpRank").addEventListener("keydown", (e) => { if(e.key==="Enter") runCollegeFinder(); });
+
+    // ---------- ADVANCED CALCULATOR LOGIC ----------
+    const allSemData = [
+        { id: 1, c: 18, l: 'Semester 1', type: 'simple' },
+        { id: 2, c: 22, l: 'Semester 2', type: 'simple' },
+        { id: 3, c: 26, l: 'Semester 3', type: 'simple' },
+        { id: 4, c: 26, l: 'Semester 4', type: 'simple' },
+        { id: 5, c: 24, l: 'Semester 5', type: 'detailed', maxIA: 240, maxTh: 60, maxPr: 100 },
+        { id: 6, c: 16, l: 'Semester 6', type: 'detailed', maxIA: 240, maxExt: 160 }
+    ];
+
+    const semContainer = document.getElementById('sem-inputs-container');
+
+    allSemData.forEach(s => {
+        if (s.type === 'simple') {
+            semContainer.innerHTML += `
+                <div class="calc-input-group">
+                    <span class="calc-sem-name">${s.l}</span>
+                    <input type="number" id="sem-${s.id}" placeholder="SGPA" step="0.01" min="0" max="10" style="width:90px;padding:8px;text-align:center;">
+                </div>
+            `;
+        } else if (s.id === 5) {
+            semContainer.innerHTML += `
+                <div class="calc-input-group sem-detailed">
+                    <div class="sgpa-result-row">
+                        <span class="calc-sem-name">${s.l} <small style="color:var(--accent); font-size:0.75rem;">(Auto / Manual)</small></span>
+                        <input type="number" id="sem-${s.id}" placeholder="SGPA" step="0.01" min="0" max="10" style="width:90px;padding:8px;text-align:center;">
+                    </div>
+                    <div class="marks-grid">
+                        <div><label>Internal</label><input type="number" id="sem-${s.id}-ia" placeholder="Max ${s.maxIA}" oninput="autoCalcSGPA5()"></div>
+                        <div><label>Theory</label><input type="number" id="sem-${s.id}-et" placeholder="Max ${s.maxTh}" oninput="autoCalcSGPA5()"></div>
+                        <div><label>Practical</label><input type="number" id="sem-${s.id}-ep" placeholder="Max ${s.maxPr}" oninput="autoCalcSGPA5()"></div>
+                    </div>
+                </div>
+            `;
+        } else if (s.id === 6) {
+            semContainer.innerHTML += `
+                <div class="calc-input-group sem-detailed">
+                    <div class="sgpa-result-row">
+                        <span class="calc-sem-name">${s.l} <small style="color:var(--accent); font-size:0.75rem;">(Auto / Manual)</small></span>
+                        <input type="number" id="sem-${s.id}" placeholder="SGPA" step="0.01" min="0" max="10" style="width:90px;padding:8px;text-align:center;">
+                    </div>
+                    <div class="marks-grid" style="grid-template-columns: 1fr 1fr;">
+                        <div><label>Internal</label><input type="number" id="sem-${s.id}-ia" placeholder="Max ${s.maxIA}" oninput="autoCalcSGPA6()"></div>
+                        <div><label>External</label><input type="number" id="sem-${s.id}-ext" placeholder="Max ${s.maxExt}" oninput="autoCalcSGPA6()"></div>
+                    </div>
+                </div>
+            `;
+        }
+    });
+
+    function getGradePoint(totalMarks) {
+        if (totalMarks >= 364) return 10;
+        if (totalMarks >= 324) return 9;
+        if (totalMarks >= 284) return 8;
+        if (totalMarks >= 244) return 7;
+        if (totalMarks >= 204) return 6;
+        if (totalMarks >= 180) return 5;
+        if (totalMarks >= 160) return 4;
+        return 0;
+    }
+
+    function autoCalcSGPA5() {
+        let ia = parseFloat(document.getElementById(`sem-5-ia`).value) || 0;
+        let et = parseFloat(document.getElementById(`sem-5-et`).value) || 0;
+        let ep = parseFloat(document.getElementById(`sem-5-ep`).value) || 0;
+        if (document.getElementById(`sem-5-ia`).value === "" && document.getElementById(`sem-5-et`).value === "" && document.getElementById(`sem-5-ep`).value === "") return;
+        if (et < 24 && document.getElementById(`sem-5-et`).value !== "") { document.getElementById(`sem-5`).value = 0; return; }
+        let total = ia + et + ep;
+        if (total > 400) total = 400;
+        document.getElementById(`sem-5`).value = getGradePoint(total);
+    }
+
+    function autoCalcSGPA6() {
+        let ia = parseFloat(document.getElementById(`sem-6-ia`).value) || 0;
+        let ext = parseFloat(document.getElementById(`sem-6-ext`).value) || 0;
+        if (document.getElementById(`sem-6-ia`).value === "" && document.getElementById(`sem-6-ext`).value === "") return;
+        let total = ia + ext;
+        if (total > 400) total = 400;
+        document.getElementById(`sem-6`).value = getGradePoint(total);
+    }
+
+    function calculateCGPA() {
+        let tp = 0, tc = 0, cnt = 0;
+        allSemData.forEach(s => {
+            let v = document.getElementById(`sem-${s.id}`).value;
+            if (v !== "" && v >= 0 && v <= 10) {
+                let sg = parseFloat(v);
+                tp += (sg * s.c); tc += s.c; cnt++;
+            }
+        });
+        if (cnt === 0) { alert("Enter data for at least one semester!"); return; }
+        let cg = tp / tc;
+        let perc = (cg - 0.75) * 10;
+        const box = document.getElementById('cgpaResultBox'), bdg = document.getElementById('cgpaBadge');
+        box.style.display = 'block';
+        document.getElementById('finalCgpaVal').innerText = cg.toFixed(2);
+        document.getElementById('finalPercentVal').innerText = perc.toFixed(2) + "%";
+        document.getElementById('finalCreditsVal').innerText = tc;
+        if (perc >= 70) { bdg.innerText = "🌟 FCD (Distinction)"; bdg.style.background = "#48bb78"; triggerConfetti(); }
+        else if (perc >= 60) { bdg.innerText = "👍 First Class"; bdg.style.background = "#3182ce"; }
+        else { bdg.innerText = "📚 Second Class"; bdg.style.background = "#ecc94b"; }
+        box.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function resetCalculator() {
+        allSemData.forEach(s => {
+            document.getElementById(`sem-${s.id}`).value = "";
+            if (s.id === 5) { document.getElementById(`sem-5-ia`).value = ""; document.getElementById(`sem-5-et`).value = ""; document.getElementById(`sem-5-ep`).value = ""; }
+            else if (s.id === 6) { document.getElementById(`sem-6-ia`).value = ""; document.getElementById(`sem-6-ext`).value = ""; }
+        });
+        document.getElementById('cgpaResultBox').style.display = 'none';
+    }
+
+    // ---------- CONFETTI ----------
+    function triggerConfetti(){const c=document.getElementById('confetti'),ctx=c.getContext('2d');c.width=window.innerWidth;c.height=window.innerHeight;const p=[],cols=['#ff0080','#764ba2','#667eea','#48bb78','#ecc94b'];for(let i=0;i<100;i++)p.push({x:Math.random()*c.width,y:Math.random()*c.height-c.height,w:Math.random()*10+5,h:Math.random()*10+5,c:cols[Math.floor(Math.random()*cols.length)],s:Math.random()*3+2,sw:Math.random()*2});function ani(){ctx.clearRect(0,0,c.width,c.height);p.forEach(x=>{x.y+=x.s;x.x+=Math.sin(x.y*0.01)*x.sw;ctx.fillStyle=x.c;ctx.fillRect(x.x,x.y,x.w,x.h)});if(p.some(x=>x.y<c.height))requestAnimationFrame(ani);else ctx.clearRect(0,0,c.width,c.height)}ani()}
+  </script>
+</body>
+</html>
